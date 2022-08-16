@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="eo">
+    <head>
+        <title>mapono</title>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/917f1a4cfd.js"></script>
+        <style>
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.background {
+    background-image: url(images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#lang-switcher {
+    color: white;
+}
+
+.title-text {
+
+    height: 100vh;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.title-text a {
+    text-decoration: none;
+    color: lightpink;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Impact, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+
+#about {
+    padding: 10px;
+    font-size: 18px;
+}
+
+            #about a {
+    text-decoration: none;
+    color: aqua;
+}
+
+footer {
+    text-align: center;
+    padding-top: 50px;
+    background-color: #1a1a1a;
+    height: 150px;
+}
+
+footer .wrapper  {
+    color: black;
+    display: inline-flex;
+}
+
+footer .wrapper .icon {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+footer .wrapper .icon span {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+footer .wrapper .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+footer .wrapper .icon:hover span i {
+    color: white;
+}
+
+footer .wrapper .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    font-size: 20px;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.2265, 1.55);
+}
+
+footer .wrapper .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+footer .wrapper .icon .tooltip:before { 
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: white;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.2265, 1.55);
+}
+
+.wrapper .reddit:hover span,
+.wrapper .reddit:hover .tooltip,
+.wrapper .reddit:hover .tooltip:before {
+    background-color: #ff4301;
+}
+.wrapper .discord:hover span,
+.wrapper .discord:hover .tooltip,
+.wrapper .discord:hover .tooltip:before {
+    background-color: #7289DA;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before {
+    background-color: #333333;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #ff9933;
+}
+
+
+
+
+        </style>
+    <head>
+    <body>
+        <div class="background">
+            <a href="tok.html" id="lang-switcher">ŝanĝi lingvon</a>
+            <div class="title-text">
+                MAPONO
+                <br>
+                <a href="#about">pri</a>
+            </div>
+        </div>
+        <div id="about">
+            <br><br><br>
+
+            <h2>Bonvenon</h2>
+            Saluton! Ni estas a grupo de Tokipono entuziasmuloj. Ni volas krei landon nomatan mapono. Nuntempe, ni volas krei administradon por tokipono. Aliĝu al ni sur nia vojaĝo! Ĉu vi volas paroli pri ma pona kun homoj? Rigardu ĉi tiujn retejojn: 
+            <ul>
+                <li><a href="https://dicord.gg/BVftepeazf">Diskordo</a></li>
+                <li><a href="https://www.reddit.com/r/ma_pona/">Redito</a></li>
+            </ul>
+            Ĉu vi havas flagajn ideojn? Bonvolu sendi la flago al la Diskordo servilo aŭ la Redito.
+
+
+            <h2>Celoj</h2>
+            Ni bezonas celoj por mapono, jen listo:
+            <ul>
+                <li>Akiru flagon</li>
+                <li>Akiru lando</li>
+                <li>Akiru bona registaro</li>
+            </ul>
+
+
+            <h2>Informoj</h2>
+            Kio estas mapono?<br>
+            mapono estas lando por parolantoj de Tokipono.
+            <br><br>
+            Kio estas flago?<br>
+            Ni ne havas flagon.
+
+            <br><br><br><br><br><br>
+
+            
+        </div>
+        <footer>
+            <span style="font-size: 24px; font-weight: bold;">ĉio estas bona</span>
+            <br><br>
+            <div class="wrapper">
+                <div class="icon reddit">
+                    <div class="tooltip">Redito</div>
+                    <span><a href="https://reddit.com/r/ma_pona"><i class="fa-brands fa-reddit"></i></a></span>
+                </div>
+                <div class="icon discord">
+                    <div class="tooltip">Diskordo</div>
+                    <span><a href="https://discord.gg/BVftepeazf"><i class="fa-brands fa-discord"></i></a></span>
+                </div>
+                <div class="icon github">
+                    <div class="tooltip">Githubo</div>
+                    <span><a href="https://github.com/PureRaider/mapona.xyz"><i class="fa-brands fa-github"></i></a></span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

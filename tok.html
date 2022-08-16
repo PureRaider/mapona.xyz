@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ma pona</title>
+        <script src="https://kit.fontawesome.com/917f1a4cfd.js"></script>
+        <style>
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.background {
+    background-image: url(images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#lang-switcher {
+    color: white;
+}
+
+.title-text {
+
+    height: 100vh;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.title-text a {
+    text-decoration: none;
+    color: lightpink;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Impact, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+
+#about {
+    padding: 10px;
+    font-size: 18px;
+}
+
+            #about a {
+    text-decoration: none;
+    color: aqua;
+}
+
+footer {
+    text-align: center;
+    padding-top: 50px;
+    background-color: #1a1a1a;
+    height: 150px;
+}
+
+footer .wrapper  {
+    color: black;
+    display: inline-flex;
+}
+
+footer .wrapper .icon {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+footer .wrapper .icon span {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+footer .wrapper .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+footer .wrapper .icon:hover span i {
+    color: white;
+}
+
+footer .wrapper .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    font-size: 20px;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.2265, 1.55);
+}
+
+footer .wrapper .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+footer .wrapper .icon .tooltip:before { 
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: white;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.2265, 1.55);
+}
+
+.wrapper .reddit:hover span,
+.wrapper .reddit:hover .tooltip,
+.wrapper .reddit:hover .tooltip:before {
+    background-color: #ff4301;
+}
+.wrapper .discord:hover span,
+.wrapper .discord:hover .tooltip,
+.wrapper .discord:hover .tooltip:before {
+    background-color: #7289DA;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before {
+    background-color: #333333;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #ff9933;
+}
+
+
+
+
+        </style>
+    <head>
+    <body>
+        <div class="background">
+            <a href="tok-sp.html" id="lang-switcher">o ante e toki</a>
+            <div class="title-text">
+                MA PONA
+                <br>
+                <a href="#about">sona</a>
+            </div>
+        </div>
+        <div id="about">
+            <br><br><br>
+
+            <h2>kama pona</h2>
+            toki! mi kulupu pi jan pi toki pona. mi wile e ni: mi pali e ma. nimi pi ma ni li "ma pona". tenpo ni la, mi ale li pali e kulupu lawa pi toki ni. o pana e pona tawa pali ni! sina wile e toki lon ma pona tawa jan ante la, o lukin e lipu ni: 
+            <ul>
+                <li><a href="https://dicord.gg/BVftepeazf">lipu Siko</a></li>
+                <li><a href="https://www.reddit.com/r/ma_pona/">lipu Wesi</a></li>
+            </ul>
+            sina jo e sona len la, o pana e ona tawa ma pona lon lipu Siko anu lipu Wesi.
+
+
+            <h2>wile</h2>
+            mi wile jo e wile. mi jo e wile ala la, mi ken ala pini e pali. ni li lipu wile:
+            <ul>
+                <li>len ma</li>
+                <li>o kama jo e ma</li>
+                <li>o kama jo e nasin kulupu lawa</li>
+            </ul>
+
+
+            <h2>sona</h2>
+            ma pona li seme?<br>
+            ma pona li ma pi toki pona
+            <br><br>
+            len ma li seme?<br>
+            mi mute li jo ala e len ma
+
+            <br><br><br><br><br><br>
+
+            
+        </div>
+        <footer>
+            <span style="font-size: 24px; font-weight: bold;">ale li pona</span>
+            <br><br>
+            <div class="wrapper">
+                <div class="icon reddit">
+                    <div class="tooltip">lipu&nbsp;Wesi</div>
+                    <span><a href="https://reddit.com/r/ma_pona"><i class="fa-brands fa-reddit"></i></a></span>
+                </div>
+                <div class="icon discord">
+                    <div class="tooltip">lipu&nbsp;Siko</div>
+                    <span><a href="https://discord.gg/BVftepeazf"><i class="fa-brands fa-discord"></i></a></span>
+                </div>
+                <div class="icon github">
+                    <div class="tooltip">lipu&nbsp;Kito</div>
+                    <span><a href="https://github.com/PureRaider/mapona.xyz"><i class="fa-brands fa-github"></i></a></span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

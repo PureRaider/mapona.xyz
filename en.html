@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ma pona</title>
+        <script src="https://kit.fontawesome.com/917f1a4cfd.js"></script>
+        <style>
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.background {
+    background-image: url(images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#lang-switcher {
+    color: white;
+}
+
+.title-text {
+
+    height: 100vh;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.title-text a {
+    text-decoration: none;
+    color: lightpink;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Impact, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+
+#about {
+    padding: 10px;
+    font-size: 18px;
+}
+
+            #about a {
+    text-decoration: none;
+    color: aqua;
+}
+
+footer {
+    text-align: center;
+    padding-top: 50px;
+    background-color: #1a1a1a;
+    height: 150px;
+}
+
+footer .wrapper  {
+    color: black;
+    display: inline-flex;
+}
+
+footer .wrapper .icon {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+footer .wrapper .icon span {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+footer .wrapper .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+footer .wrapper .icon:hover span i {
+    color: white;
+}
+
+footer .wrapper .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    font-size: 20px;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.2265, 1.55);
+}
+
+footer .wrapper .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+footer .wrapper .icon .tooltip:before { 
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: white;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.2265, 1.55);
+}
+
+.wrapper .reddit:hover span,
+.wrapper .reddit:hover .tooltip,
+.wrapper .reddit:hover .tooltip:before {
+    background-color: #ff4301;
+}
+.wrapper .discord:hover span,
+.wrapper .discord:hover .tooltip,
+.wrapper .discord:hover .tooltip:before {
+    background-color: #7289DA;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before {
+    background-color: #333333;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #ff9933;
+}
+
+
+
+
+        </style>
+    <head>
+    <body>
+        <div class="background">
+            <a href="eo.html" id="lang-switcher">switch language</a>
+            <div class="title-text">
+                MA PONA
+                <br>
+                <a href="#about">about</a>
+            </div>
+        </div>
+        <div id="about">
+            <br><br><br>
+
+            <h2>Welcome</h2>
+            Hello! We are a group of Toki Pona enthusiats who want to create a country named ma pona. For now, we want to create an administration for the language. Feel free to join us on our journey! If you want to discuss ma pona with other people, check out these links: 
+            <ul>
+                <li><a href="https://dicord.gg/BVftepeazf">Discord</a></li>
+                <li><a href="https://www.reddit.com/r/ma_pona/">Reddit</a></li>
+            </ul>
+            If you have any flag ideas, please submit them to the Discord server or on the subreddit.
+
+
+            <h2>Goals</h2>
+            We need to have some clear goals to get anything done, here's a list:
+            <ul>
+                <li>get a flag</li>
+                <li>get some territory</li>
+                <li>work out a good government</li>
+            </ul>
+
+
+            <h2>Info</h2>
+            What is ma pona?<br>
+            ma pona is a country for speakers of Toki Pona.
+            <br><br>
+            What is the flag?<br>
+            We do not have a flag.
+
+            <br><br><br><br><br><br>
+
+            
+        </div>
+        <footer>
+            <span style="font-size: 24px; font-weight: bold;">all is good</span>
+            <br><br>
+            <div class="wrapper">
+                <div class="icon reddit">
+                    <div class="tooltip">Reddit</div>
+                    <span><a href="https://reddit.com/r/ma_pona"><i class="fa-brands fa-reddit"></i></a></span>
+                </div>
+                <div class="icon discord">
+                    <div class="tooltip">Discord</div>
+                    <span><a href="https://discord.gg/BVftepeazf"><i class="fa-brands fa-discord"></i></a></span>
+                </div>
+                <div class="icon github">
+                    <div class="tooltip">Github</div>
+                    <span><a href="https://github.com/PureRaider/mapona.xyz"><i class="fa-brands fa-github"></i></a></span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
